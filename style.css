@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #a5cfde, #169077);
@@ -261,3 +261,31 @@ button {
     transition: background-color 0.3s;
 }
 
+
+
+#social-media-widget {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 80px; /* Madhësia e ikonave */
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Ndryshoni faktorin e shkallëzimit sipas dëshirës */
+}
