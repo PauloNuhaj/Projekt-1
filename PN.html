@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport nderkombetar ndërmjet Greqise dhe Shqipërisë</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+           
+        }
+
+        header {
+            background-color: #00bbff,;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #00bbff,;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+       
+
+          /* Add styles for the navigation menu */
+          nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+        }
+
+        nav a {
+            float: center;
+            display: inline;
+            color: rgb(253, 253, 253);
+            text-align: center;
+            padding: 14px 120px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #turning-section {
+            transform: rotateY(360deg);
+            animation: turnAnimation 2s ease-in-out forwards;
+        }
+
+        @keyframes turnAnimation {
+            from {
+                transform: rotateY(360deg);
+            }
+            to {
+                transform: rotateY(0deg);
+            }
+        }
+
+        #map-container {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .welcome-text {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+    </style>
+
+
+     <!-- Link to your CSS file -->
+     <link rel="stylesheet" href="style.css">
+
+
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Slajder me Imazhe</title>
+     <style>
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5); /* Added background color for better visibility */
+        }
+
+        .next {
+            right: -40px;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev {
+            left: -40px; /* Adjusted left positioning */
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+
+
+        .welcome-text {
+        font-size: 24px; /* Adjust the font size as needed */
+        font-weight: bold; /* Add bold font weight */
+        color: #000000; /* Change the text color */
+        line-height: 1.5; /* Adjust line height for better readability */
+        margin-bottom: 20px; /* Add margin at the bottom */
+        font-style: italic; /* Add italic style for emphasis */
+    }
+    </style>
+
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </nav>
+        <h1>Transport nderkombetar ndërmjet Greqisë dhe Shqipërisë</h1>
+    </header>
+
+
+
+
+    <section id="home" class="about-section">
+
+        <section  class="about-section">
+            <h2>Firma Nuhaj</h2>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="img" src="p2.jpg" alt="Imazhi 1">
+            </div>
+    
+            <div class="mySlides">
+                <img class="img" src="p1.jpg" alt="Imazhi 2">
+            </div>
+    
+            <!-- Shtoni më shumë divs me klasën "mySlides" dhe imazhet e tyre -->
+    
+            <!-- Navigimi i slajdit -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+    
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+    
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+    
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+    
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+
+        <p class="welcome-text">Zhvillimi i biznesit tuaj ndërkombëtar fillon këtu. Ofroni shërbimet tuaja të transportit midis Greqisë dhe Shqipërisë me partnerin tonë të besueshëm.</p>
+
+        <h3>Përfitoni nga shërbimet tona:</h3>
+        <ul>
+            <li class="welcome-text">Transporti i ngarkesave në mënyrë të sigurt dhe efikase.</li>
+            <li class="welcome-text">Flota e makinave moderne dhe të mirëmbajtura.</li>
+            <li class="welcome-text">Tracking online për të monitoruar statusin e ngarkesave.</li>
+        </ul>
+        <section>
+            <section id="contact" class="about-section"></section>
+            <!-- Pjesa e formularit -->
+            <h3>Na Kontaktoni me poshte </h3>
+            <form action="procesuesi-i-formes.php" method="POST">
+                <label for="emri">Emri:</label>
+                <input type="text" id="emri" name="emri" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mesazhi">Mesazhi:</label>
+                <textarea id="mesazhi" name="mesazhi"  required></textarea>
+    
+                <button type="submit">Dërgo</button>
+            </form>
+        </section>
+
+        <section id="location" class="about-section">
+             <h5 id="location-button"> Vendodhja jone</h5>
+
+        <section id="map">
+            <!-- Paste the embedded map code here -->
+            <div style="width: 100%; height: 400px; margin: 20px 0;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.9516417574032!2d19.57043956707091!3d40.72227453429613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135aadd98b6f9803%3A0xd37ba3d2def94e49!2sFirma%20Nuhaj!5e0!3m2!1ssq!2s!4v1700214326728!5m2!1ssq!2s"
+                 width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                
+                </iframe>                    
+    
+            
+            </div>
+            
+        </section>
+        
+
+        
+        
+      
+    <!-- About Us section -->
+    <section id="about" class="about-section">
+        <h3>Rreth Nesh</h3>
+        <p>Transporti Shqipëri-Greqi është një kompani e specializuar në shërbimet e transportit ndërkombëtar, e cila ka ndërtuar një reputacion të fortë për cilësi, besueshmëri dhe përkushtim ndaj klientëve. Me një histori të pasur që fillon nga themelimi ynë, kemi zhvilluar një rrugëtim të përshtatshëm për të përmbushur dhe tejkaluar pritshmëritë e klientëve tanë.</p>
+    
+        <p>Missioni ynë është të ofrojmë shërbime të transportit të avancuara dhe inovative, duke përdorur një flotë të përditësuar me teknologji të fundit dhe një ekip të specializuar me pervojë të gjatë në fushën e logjistikës. Ne vlerësojmë çdo dërgesë si një sfidë dhe jemi të përkushtuar që çdo ngarkesë të mbërrijë në destinacionin e saj me sukses dhe në kohë.</p>
+    
+        <p>Çfarë na dallon është përqendrimi ynë i vazhdueshëm në nevojat e klientëve. Kemi kuptuar qëndrueshmërinë e një biznesi në fushën e transportit varet nga aftësia për të ofruar zgjidhje të personalizuara. Për këtë arsye, punojmë ngushtë me çdo klient për të kuptuar thellësisht nevojat e tyre dhe për të zhvilluar një strategji transporti efikase.</p>
+    
+        <p>Ne kemi kujdes për çdo hap të procesit të transportit, duke filluar nga marrja e ngarkesës, përpunimi, monitorimi dhe deri te dorëzimi në destinacion. Kjo përqendrim në detaje dhe cilësi ka bërë që shumë klientë të na mbajnë besim dhe të na konsiderojnë partnerët e tyre të besueshëm në fushën e transportit ndërkombëtar.</p>
+    
+        <p>Kujdesi dhe përgjegjësia ndaj mjedisit dhe shoqërisë janë vlera themelore për ne. Ne punojmë në drejtim të përmirësimit të impaktit tonë mjedisor dhe pjesëmarrjes aktive në iniciativa sociale që promovojnë zhvillimin dhe mirëqenien e komuniteteve ku operojmë.</p>
+    
+        <p>Faqja jonë internet është një dritare në botën tonë të transportit, por për të kuptuar plotësisht se çfarë mund të ofrojmë, ju ftojmë të na vizitoni në zyrat tona ose të na kontaktoni drejtpërdrejt. Jemi këtu për t'ju ndihmuar të gjeni zgjidhjen më të mirë për nevojat e transportit tuaj ndërkombëtar.</p>
+    </section>
+    
+   
+<h3> Informacione rreth kompanise </h3>
+    <p>Email: Firma_Nuhaj@gmail.com</p>
+    <p>Telefon: +355 (0) 12 345 678</p>
+    <p><class="paragraph1"></class>&copy; 2002 Firma Nuhaj</p>
+        
+
+    
+    <script>
+        // JavaScript to add the "visible" class when the section is in view
+        window.addEventListener('scroll', function() {
+            var aboutSection = document.querySelector('.about-section');
+            var position = aboutSection.getBoundingClientRect();
+
+            if (position.top < window.innerHeight && position.bottom >= 0) {
+                aboutSection.classList.add('visible');
+            }
+        });
+    </script>
+    
+</body>
+</html>
