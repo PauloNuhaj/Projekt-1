@@ -1,20 +1,45 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #a5cfde, #169077);
-    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient i ri */
     scroll-behavior: smooth;
-
 }
 
-
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    /* Add your responsive styles here */
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 10px 20px; /* Rregullimi i padding për mobile */
+        display: block; /* Butonat në një kolonë për mobile */
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding: 10px; /* Rregullimi i padding për titrat */
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Slajderi të zërë të gjithë gjerësinë */
+    }
+
+    .mySlides img {
+        width: 100%; /* Imazhet të zënë të gjithë gjerësinë */
+    }
+
+    form {
+        max-width: 100%; /* Forma të zërë të gjithë gjerësinë */
+    }
 }
 
-
-
-
+/* Desktop Styles */
+@media only screen and (min-width: 601px) {
+    body {
+        font-size: 16px;
+    }
+}
 
 .mySlides img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,11 +50,7 @@ body {
 .mySlides img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    
 }
-
-
-
 
 form {
     max-width: 400px;
@@ -55,25 +76,18 @@ button:hover {
     background-color: #0088cc;
 }
 
-
 section {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
 section.about-section {
-    padding: 0px; /* Adjust the padding as needed */
+    padding: 0px;
 }
 
-
-
-
-
-/* Shtimi i stilit për butonin "Vendodhja Jonë" */
 #location-button {
     display: inline-block;
     background-color: #004590;
@@ -90,15 +104,13 @@ section.about-section {
     background-color: #0077cc;
 }
 
-
 .centered-image {
     max-width: 30%;
     height: auto;
-    margin: 0 auto; /* This centers the image horizontally */
+    margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }
-
 
 .center-both {
     display: flex;
@@ -106,12 +118,8 @@ section.about-section {
     justify-content: center;
     height: 100vh;
 }
-h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-h1 {
+h1, h2, h3, h4, h5 {
     color: #333;
     text-align: center;
     padding: 20px;
@@ -120,103 +128,42 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-h2 {
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    border-radius: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-
-
-
-h3 {
-
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    background-color: #004590;
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-
-
-
-h4 {
-
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    background-color: #004590;
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-h5 {
-
-    color: #333;
-    text-align: center;
-    padding: 50px;
-    background-color: #074f63;
-    color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 
 p {
     margin-top: 90px;
     margin-bottom: 40px;
 }
 
-
 ul {
     list-style: circle;
     padding: 0;
 }
 
-/* Center dots within list items */
 ul li {
     list-style-position: inside;
-    text-align: center; /* Optional: Center the text within list items */
+    text-align: center;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-
 p {
-    
     text-align: center;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
-
-
-.paragraph1{
-
+.paragraph1 {
     text-align: center;
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #000000; /* Ngjyra e tekstit */
+    color: #000000;
     font-weight: bold;
 }
 
@@ -224,68 +171,35 @@ input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
-    border: 1px solid #000000; /* Stilizimi i kornizës */
+    border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #8cdaf6; /* Ngjyra e sfondit */
-}
-label {
-    /*... stilizime të tjera ... */
-    transition: color 0.3s;
+    background-color: #8cdaf6;
 }
 
 label:hover {
-    color: #0037ff; /* Ndryshimi i ngjyrës kur kalohet mbi labelën */
-}
-input:focus, textarea:focus {
-    border-color: #004590 /* Ndryshimi i ngjyrës së kornizës kur është fokusuar */
-    outline: none; /* Hiq një eventuale vijë konture që shfaqet në disa shfletues kur është fokusuar */
+    color: #0037ff;
 }
 
+input:focus, textarea:focus {
+    border-color: #004590;
+    outline: none;
+}
 
 button {
-    background-color: #004590; /* Ngjyra e sfondit */
-    color: #fff; /* Ngjyra e tekstit */
-    padding: 10px 20px; /* Mbushje e butonit */
+    background-color: #004590;
+    color: #fff;
+    padding: 10px 20px;
     font-size: 16px;
-    border: none; /* Hiq kufizuesin e kornizës */
-    border-radius: 4px; /* Rrethues i këndit të butonit */
-    cursor: pointer; /* Kursori ndryshon në një dorezë kur kalohet mbi butonin */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #004590; /* Ndryshimi i ngjyrës së sfondit kur kalohet mbi butonin */
+    background-color: #004590;
 }
+
 button {
-    /* ... stile të tjera ... */
     transition: background-color 0.3s;
-}
-
-
-
-#social-media-widget {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    position: relative;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 80px; /* Madhësia e ikonave */
-    height: 80px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.2); /* Ndryshoni faktorin e shkallëzimit sipas dëshirës */
 }
